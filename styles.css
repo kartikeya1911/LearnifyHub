@@ -501,3 +501,151 @@ section {
         width: 100%;
     }
 }
+:root {
+    --primary-color: #3bc3f5;
+    --primary-dark: hsl(206, 98%, 58%);
+    --background-dark: #1a1e23;
+    --card-background: rgba(37, 42, 48, 0.8);
+    --text-color: #ffffff;
+    --text-muted: #888888;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --glass-background: rgba(255, 255, 255, 0.1);
+    --glass-border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: var(--background-dark);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Navbar Animation */
+.navbar {
+    animation: slideDown 0.8s ease-in-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.nav-links a {
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: var(--transition);
+    transform: translateX(-50%);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Hero Section Animation */
+.hero-content {
+    animation: scaleUp 1s ease-in-out;
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.letter {
+    display: inline-block;
+    transition: var(--transition);
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.letter:hover {
+    transform: translateY(-10px) rotate(10deg);
+    text-shadow: 0 0 20px var(--primary-color);
+}
+
+/* Resource Cards */
+.resource-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.resource-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(18, 142, 252, 0.2);
+}
+
+/* Floating Button Animation */
+.floating-actions button {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.floating-actions button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(106, 96, 251, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 3rem;
+    }
+    .floating-actions {
+        right: 1rem;
+        bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 2rem;
+    }
+    .subtitle {
+        font-size: 1.2rem;
+    }
+}

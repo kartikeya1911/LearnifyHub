@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="/placeholder.svg?height=50&width=50" alt="Logo" />
+            </div>
+            <nav>
+                <a href="#" class="active"><i class="fas fa-user"></i> Profile</a>
+                <a href="#"><i class="fas fa-blog"></i> Blogs</a>
+                <a href="#"><i class="fas fa-file-alt"></i> DSA Sheets</a>
+                <a href="#"><i class="fas fa-sitemap"></i> System Design</a>
+                <a href="#"><i class="fas fa-play"></i> DSA Playlist</a>
+                <a href="#"><i class="fas fa-book"></i> Core Sheets</a>
+                <a href="#"><i class="fas fa-bookmark"></i> Saved Notes</a>
+                <a href="#"><i class="fas fa-laptop-code"></i> CW Fullstack</a>
+            </nav>
+            <div class="upgrade-banner">
+                <h3>⭐ Upgrade to Plus</h3>
+                <p>Unleash Your Full Potential with Exclusive Features</p>
+                <button class="upgrade-btn">Get Started Now</button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Profile Section -->
+            <div class="profile-section">
+                <div class="profile-header">
+                    <img src="/placeholder.svg?height=120&width=120" alt="Profile" class="profile-pic" />
+                    <div class="profile-info">
+                        <h1>Yash Duggal</h1>
+                        <p class="username">@yash01duggal</p>
+                        <div class="profile-visibility">
+                            <span>Public</span>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Progress Section -->
+                <div class="progress-section">
+                    <h2>Progress</h2>
+                    <div class="progress-circles">
+                        <div class="progress-item">
+                            <div class="circle-progress" data-progress="0">
+                                <span class="progress-text">0%</span>
+                            </div>
+                            <span class="progress-label">A2Z</span>
+                        </div>
+                        <div class="progress-item">
+                            <div class="circle-progress" data-progress="0">
+                                <span class="progress-text">0%</span>
+                            </div>
+                            <span class="progress-label">SDE</span>
+                        </div>
+                        <div class="progress-item">
+                            <div class="circle-progress" data-progress="0">
+                                <span class="progress-text">0%</span>
+                            </div>
+                            <span class="progress-label">79</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topics Section -->
+                <div class="topics-section">
+                    <h2>Topics Covered (learnify)</h2>
+                    <div class="topics-grid">
+                        <!-- Topics will be added dynamically via JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar">
+            <h2>Leetcode Data</h2>
+            <div class="leetcode-form">
+                <input type="text" placeholder="Leetcode Username" />
+                <button class="submit-btn">Submit</button>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
+
