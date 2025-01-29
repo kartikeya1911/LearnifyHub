@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #00ff00;
-    --primary-dark: #00cc00;
+    --primary-color: #3bc3f5;
+    --primary-dark: hsl(206, 98%, 58%);
     --background-dark: #1a1e23;
     --card-background: rgba(37, 42, 48, 0.8);
     --text-color: #ffffff;
@@ -39,7 +39,7 @@ body {
 
 /* Navbar Styles */
 .navbar {
-    background: rgba(0, 255, 0, 0.1);
+    background: rgba(43, 170, 249, 0.1);
     backdrop-filter: blur(10px);
     border-bottom: var(--glass-border);
     padding: 1rem 0;
@@ -109,7 +109,7 @@ body {
     left: 50%;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at center, rgba(0, 255, 0, 0.1) 0%, transparent 70%);
+    background: radial-gradient(circle at center, rgba(14, 189, 253, 0.1) 0%, transparent 70%);
     transform: translate(-50%, -50%);
     pointer-events: none;
 }
@@ -131,7 +131,7 @@ body {
     font-weight: 800;
     line-height: 1.2;
     margin-bottom: 1rem;
-    text-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+    text-shadow: 0 0 10px rgba(71, 155, 251, 0.3);
 }
 
 .letter {
@@ -381,13 +381,13 @@ section {
 
 .guide-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 255, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(42, 151, 252, 0.1);
 }
 
 .guide-icon {
     width: 80px;
     height: 80px;
-    background: rgba(0, 255, 0, 0.1);
+    background: rgba(34, 166, 248, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -420,7 +420,7 @@ section {
 
 /* Footer */
 .footer {
-    background: rgba(0, 255, 0, 0.1);
+    background: rgba(15, 190, 253, 0.1);
     backdrop-filter: blur(10px);
     border-top: var(--glass-border);
     padding: 2rem;
@@ -455,7 +455,7 @@ section {
 
 .share-btn:hover, .scroll-top-btn:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.3);
+    box-shadow: 0 5px 15px rgba(106, 96, 251, 0.3);
 }
 
 /* Responsive Design */
