@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        /* Import Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #EDE9FE;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            background: white;
+            width: 800px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .login-box {
+            width: 50%;
+            padding: 40px;
+        }
+
+        .login-box h2 {
+            font-size: 24px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .login-box p {
+            text-align: center;
+            font-size: 14px;
+            color: gray;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        button {
+            padding: 12px;
+            border: none;
+            background: #6D28D9;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #4C1D95;
+        }
+
+        .or-text {
+            text-align: center;
+            margin: 15px 0;
+            font-size: 14px;
+            color: gray;
+        }
+
+        .social-login {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .google, .facebook {
+            background: #fff;
+            color: black;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .google:hover {
+            background: #DB4437;
+            color: white;
+        }
+
+        .facebook:hover {
+            background: #4267B2;
+            color: white;
+        }
+
+        /* Right Side Image Section */
+        .image-box {
+            width: 50%;
+            background: #6D28D9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .image-box img {
+            width: 250px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Login Form Section -->
+        <div class="login-box">
+            <h2>LOGIN</h2>
+            <p>How do I get started lorem ipsum dolor at?</p>
+            
+            <form>
+                <input type="text" id="username" placeholder="Username">
+                <input type="password" id="password" placeholder="Password">
+                <button type="button" onclick="login()">Login Now</button>
+            </form>
+
+            <p class="or-text">Login with Others</p>
+            
+            <div class="social-login">
+                <button class="google">Login with Google</button>
+                <button class="facebook">Login with Facebook</button>
+            </div>
+        </div>
+
+        <!-- Image Section -->
+        <div class="image-box">
+            <img src="https://source.unsplash.com/300x300/?business,woman" alt="Login Image">
+        </div>
+    </div>
+
+    <script>
+        function login() {
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+
+            if (username === "" || password === "") {
+                alert("Please fill in both fields.");
+            } else {
+                alert("Login Successful!");
+            }
+        }
+    </script>
+
+</body>
+</html>
